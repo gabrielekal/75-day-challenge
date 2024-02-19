@@ -18,13 +18,13 @@ function onDayClick(day: number) {
 </script>
 
 <template>
-  <main class="container">
-    <BackArrow />
+  <main class="container" aria-label="Main Challenge Container">
+    <BackArrow aria-label="Go back" />
     <hr>
     <div class="title-container">
-      <h1 class="title">75-DAY?</h1>
+      <h1 class="title" aria-label="Title of the Challenge">75-DAY?</h1>
     </div>
-    <div class="circles-container">
+    <div class="circles-container" aria-label="Days Circles Container">
       <div
         class="circle"
         v-for="day in days"
@@ -36,7 +36,8 @@ function onDayClick(day: number) {
         :class="{
           'current-day': day === currentDay,
           'completed-day': day < currentDay
-        }">
+        }"
+        :aria-label="day === currentDay ? 'Current Day ' + day : 'Day ' + day + (day < currentDay ? ' Completed' : '')">
         {{ day }}
       </div>
     </div>

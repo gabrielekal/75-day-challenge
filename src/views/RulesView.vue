@@ -20,16 +20,17 @@ const titleCircles = [
 
 
 <template>
-    <main class="view">
+    <main class="view" aria-label="Main Rules view">
         <main class="container">
-            <BackArrow />
+          <BackArrow aria-label="Go back" />
             <hr><br>
             <div class="circles-container">
               <div
                 class="circle"
                 v-for="item in titleCircles"
                 :key="item.id"
-                :class="{ 'special-text': item.content === 'RULES OF 75-DAY?' }">
+                :class="{ 'special-text': item.content === 'RULES OF 75-DAY?' }"
+                :aria-label="item.content">
                 <template v-if="item.type === 'picture'">
                     <img :src="item.src" :alt="item.alt" class="circle-image" />
                 </template>

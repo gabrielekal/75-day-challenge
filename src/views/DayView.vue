@@ -29,11 +29,11 @@ function toggleCheck(rule: Rule) {
 
 
 <template>
-  <main class="container">
-    <BackArrow />
+  <main class="container" aria-label="Main Day content">
+    <BackArrow aria-label="Go back" />
     <hr>
     <div class="title-container">
-      <h1 class="title">DAY {{ day }}</h1>
+      <h1 class="title" aria-label="Current day">DAY {{ day }}</h1>
     </div>
     <div class="circles-container">
       <div
@@ -41,6 +41,7 @@ function toggleCheck(rule: Rule) {
         v-for="rule in rules"
         :key="rule.id"
         tabindex="0"
+        :aria-label="`Rule ${rule.id}`"
       >
         <h3>{{ rule.title }}</h3>
         <p>{{ rule.description }}</p>

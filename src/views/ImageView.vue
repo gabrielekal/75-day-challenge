@@ -3,11 +3,11 @@ import BackArrow from "../components/BackArrow.vue"
 </script>
 
 <template>
-    <div class="image-library-page">
-      <BackArrow />
+    <div class="image-library-page" aria-label="Image Library Page">
+      <BackArrow aria-label="Go back" />
       <div class="content">
-        <h1>WORK IN PROGRESS 📷</h1>
-        <p>Your exciting photo library will launch soon, as it is currently under construction. Please check back later.</p>
+        <h1 aria-label="Page Title">WORK IN PROGRESS 📷</h1>
+        <p aria-label="Page Description">Your exciting photo library will launch soon, as it is currently under construction. Please check back later.</p>
       </div>
     </div>
   </template>

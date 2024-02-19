@@ -20,11 +20,11 @@ function navigateToImage() {
 
 <template>
   <main class="container">
-    <BackArrow />
+    <BackArrow aria-label="Go back" />
     <hr>
-    <button type="button" class="days-left-btn background-btn">{{ currentDay }} DAYS LEFT</button>
-    <button type="button" class="rules-btn background-btn" @click="navigateToWeight">YOUR WEIGHT TRACKER</button>
-    <button type="button" class="rules-btn background-btn" @click="navigateToImage">YOUR PHOTO LIBRARY</button>
+    <button type="button" class="days-left-btn background-btn" tabindex="0" aria-label="Information about Days Left">{{ currentDay }} DAYS LEFT</button>
+    <button type="button" class="rules-btn background-btn" @click="navigateToWeight" tabindex="0" aria-label="Navigate to Weight Tracker">YOUR WEIGHT TRACKER</button>
+    <button type="button" class="rules-btn background-btn" @click="navigateToImage" tabindex="0" aria-label="Navigate to Image Library">YOUR PHOTO LIBRARY</button>
   </main>
 </template>
 

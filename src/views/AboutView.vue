@@ -10,26 +10,26 @@ const circles = [
 
 
 <template>
-    <main class="view">
+    <main class="view" aria-label="Main About content">
         <main class="container">
-            <BackArrow />
+          <BackArrow aria-label="Go back" />
             <hr><br>
             <div class="circles-container">
             <div class="circle" v-for="item in circles" :key="item.id">
                 <template v-if="item.type === 'picture'">
-                    <img :src="item.src" :alt="item.alt" class="circle-image" />
+                    <img :src="item.src" :alt="item.alt" class="circle-image" aria-label="Circle Image" />
                 </template>
                 <template v-else-if="item.type === 'text'">
-                    {{ item.content }}
+                  <span aria-label="Text Content">{{ item.content }}</span>
                 </template>
             </div>
             </div>
-            <section class="challenge-description">
+            <section class="challenge-description" aria-label="Challenge Description">
                 <h2>Self-Improvement Journey</h2>
                 <p>The 75 Day Challenge is a thoughtfully designed program for those seeking significant improvements in mental and physical resilience. Beyond fitness, it's a transformative journey demanding steadfast discipline.</p>
                 <p>Contrary to rigidity, the challenge offers flexibility. Missing a day doesn't require a restart, providing a forgiving experience suitable for beginners in personal growth.</p>
                 <p>Spanning 75 days, this challenge enhances well-being. Whether boosting mental resilience, improving fitness, or embarking on personal growth, it offers a structured and transformative experience aligned with your aspirations. Explore more about this challenge on our 'Rules' page to discover its potential as a catalyst for positive change.</p>
-                <hr>
+                <hr aria-label="Separator">
             </section>
         </main>
     </main>

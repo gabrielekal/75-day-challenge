@@ -99,14 +99,14 @@ onMounted(() => {
 </script>
 
 <template>
-    <main class="container">
-      <BackArrow />
+    <main class="container" aria-label="Main Weight Tracker Content">
+    <BackArrow aria-label="Go back" />
       <hr>
       <div class="title-container">
-        <h1 class="title">WEIGHT TRACKER</h1>
+        <h1 class="title" aria-label="Page Title">WEIGHT TRACKER</h1>
       </div>
-      <div class="chart-container">
-        <canvas id="weightsChart" width="400" height="400"></canvas>
+      <div class="chart-container" aria-label="Weight Chart Container">
+        <canvas id="weightsChart" width="400" height="400" aria-label="Weight Chart"></canvas>
       </div>
     </main>
   </template>
