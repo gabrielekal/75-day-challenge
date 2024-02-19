@@ -48,8 +48,6 @@ export const useChallengeStore = defineStore('challenge', {
         if (day < 75) {
           this.incrementDay();
         }
-      } else {
-        console.log('Not all rules are completed for day', day);
       }
     },
   },

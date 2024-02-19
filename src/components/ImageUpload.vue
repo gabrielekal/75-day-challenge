@@ -26,6 +26,7 @@ function handleImageChange(event: Event) {
         :id="`file-upload-${props.rule.id}`"
         @change="handleImageChange($event)"
         accept="image/*"
+        aria-label="Upload picture"
       />
       <img
         v-if="uploadedImages[props.rule.id]"

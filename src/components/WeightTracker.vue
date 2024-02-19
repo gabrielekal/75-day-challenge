@@ -39,16 +39,17 @@ function closeModal() {
         placeholder="Enter weight"
         min="0"
         step="0.1"
+        aria-label="Enter weight in kilograms"
       />
       <button type="button" @click="handleSubmit">Submit</button>
       <div v-if="weightSubmitted" class="overlay">
         <div class="modal">
           <p>Your weight {{ submittedWeight }} kg has been submitted.</p>
           <button type="button" class="close" @click="closeModal">Close</button>
-        </div>
       </div>
     </div>
-  </template>
+  </div>
+</template>
 
   <style scoped>
   .weight-input-container {

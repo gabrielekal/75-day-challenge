@@ -55,6 +55,8 @@ The Challenge Day page is where participants put their daily discipline and comm
 **Purpose:**  
 The Progress page offers a holistic view of the participant's journey, including a countdown, weight tracker, and photo library for self-reflection.
 
+// Please bear in mind that the photo library is still under construction, thus it is not accessible in this assignment. ⚒️
+
 ### Rules Page 📜
 
 **Purpose:**  
