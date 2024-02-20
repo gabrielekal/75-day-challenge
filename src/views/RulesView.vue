@@ -48,19 +48,11 @@ const titleCircles = [
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   justify-content: center;
-
-  /* max-width: 600px; */
   margin: auto;
-
-  /* grid-column-gap: 0; */
 }
 
 
 .circle {
-  /* width: 100%; */
-
-  /* max-width: 230px;  */
-
   height: 230px;
   border-radius: 10%;
   background-color: #344F34;

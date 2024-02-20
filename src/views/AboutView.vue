@@ -43,8 +43,6 @@ const circles = [
   align-items: center;
   height: 100vh;
   padding: 20px;
-
-  /* max-width: 600px; */
   margin: auto;
 }
 
