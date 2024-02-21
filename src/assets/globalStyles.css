@@ -1,0 +1,45 @@
+.container {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .title {
+    font-size: 80px;
+    color: #344F34;
+    font-family: Anton, sans-serif;
+    align-content: center;
+  }
+  
+  .button, .circle, .rules-btn, .circular-btn {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .button::after, .circle::after, .rules-btn::after, .circular-btn::after {
+    content: "➜";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #D08BB9;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .button:hover, .circle:hover, .rules-btn:hover, .circular-btn:hover {
+    color: transparent;
+  }
+  
+  .button:hover::after, .circle:hover::after, .rules-btn:hover::after, .circular-btn:hover::after {
+    left: 0;
+  }
+  

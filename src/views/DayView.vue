@@ -60,12 +60,7 @@ function toggleCheck(rule: Rule) {
 
 <style scoped>
 .container {
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
   height: 100vh;
-  padding: 10px;
-  margin: 10px;
 }
 
 .title-container {
@@ -74,12 +69,6 @@ function toggleCheck(rule: Rule) {
   align-items: center;
   height: 100px;
   width: 100%;
-}
-
-.title {
-  font-size: 80px;
-  color: #344F34;
-  font-family: Anton, sans-serif;
 }
 
 .circles-container {
@@ -91,7 +80,6 @@ function toggleCheck(rule: Rule) {
   margin: auto;
 }
 
-
 .circle {
   width: 230px;
   height: 230px;
@@ -102,7 +90,6 @@ function toggleCheck(rule: Rule) {
   align-items: center;
   justify-content: center;
   border: 1px solid #D08BB9;
-  overflow: hidden;
   color: white;
 }
 

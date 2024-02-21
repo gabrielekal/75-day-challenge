@@ -1,4 +1,5 @@
 import './assets/main.css';
+import './assets/globalStyles.css';
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
 import useRuleStore from './stores/useRuleStore';

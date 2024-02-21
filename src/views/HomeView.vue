@@ -93,7 +93,6 @@ function navigateToAbout() {
 .title {
   color: white;
   margin: 0;
-  font-family: Anton, sans-serif;
   font-size: 100px;
 }
 
@@ -116,39 +115,11 @@ function navigateToAbout() {
   color: white;
   font-family: Anton, sans-serif;
   font-size: 20px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.rules-btn::after {
-  content: "➜";
-  position: absolute;
-  left: 100%;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: #D08BB9;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.rules-btn:hover::after {
-  left: 0;
-}
-
-.rules-btn:hover {
-  color: transparent;
 }
 
 .circular-btn {
   font-family: Anton, sans-serif;
   font-size: 30px;
-  position: relative;
   margin: 1px;
   padding: 10px;
   border-radius: 40px;
@@ -158,37 +129,14 @@ function navigateToAbout() {
   border: none;
   color: white;
   background: #D08BB9;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow: hidden;
-  transition: all 0.3s ease;
 }
 
 .circular-btn::after {
-  content: "➜";
-  position: absolute;
   font-size: 20px;
-  left: 100%;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: #D08BB9;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.circular-btn:hover::after {
-  left: 0;
-}
-
-.circular-btn:hover {
-  color: transparent;
 }
 
 .circular-btn:first-child {

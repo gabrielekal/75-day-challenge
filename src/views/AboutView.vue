@@ -15,7 +15,7 @@ const circles = [
           <BackArrow aria-label="Go back" />
             <hr><br>
             <div class="circles-container">
-            <div class="circle" v-for="item in circles" :key="item.id">
+            <div class="about-circle" v-for="item in circles" :key="item.id">
                 <template v-if="item.type === 'picture'">
                     <img :src="item.src" :alt="item.alt" class="circle-image" aria-label="Circle Image" />
                 </template>
@@ -38,9 +38,6 @@ const circles = [
 <style scoped>
 
 .container {
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
   height: 100vh;
   padding: 20px;
   margin: auto;
@@ -55,7 +52,7 @@ const circles = [
 }
 
 
-.circle {
+.about-circle {
   width: 155px;
   height: 155px;
   border-radius: 10%;

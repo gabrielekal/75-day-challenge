@@ -113,9 +113,6 @@ onMounted(() => {
 
   <style scoped>
   .container {
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
     height: 100vh;
     padding: 10px;
     margin: 10px;
@@ -123,9 +120,6 @@ onMounted(() => {
 
   .title {
     font-size: 60px;
-    color: #344F34;
-    font-family: Anton, sans-serif;
-    align-content: center;
   }
 
   .title-container {

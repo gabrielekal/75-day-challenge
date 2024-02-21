@@ -26,7 +26,7 @@ const titleCircles = [
             <hr><br>
             <div class="circles-container">
               <div
-                class="circle"
+                class="rules-circle"
                 v-for="item in titleCircles"
                 :key="item.id"
                 :class="{ 'special-text': item.content === 'RULES OF 75-DAY?' }"
@@ -52,7 +52,7 @@ const titleCircles = [
 }
 
 
-.circle {
+.rules-circle {
   height: 230px;
   border-radius: 10%;
   background-color: #344F34;
@@ -73,9 +73,6 @@ const titleCircles = [
 }
 
 .container {
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
   height: 100vh;
   padding: 10px;
   margin: 10px;

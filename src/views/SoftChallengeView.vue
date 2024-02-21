@@ -46,19 +46,7 @@ function onDayClick(day: number) {
 
 <style scoped>
 .container {
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
   height: 100vh;
-  padding: 10px;
-  margin: 10px;
-}
-
-.title {
-  font-size: 80px;
-  color: #344F34;
-  font-family: Anton, sans-serif;
-  align-content: center;
 }
 
 .title-container {
@@ -87,37 +75,13 @@ function onDayClick(day: number) {
   align-items: center;
   justify-content: center;
   color: black;
-  cursor: pointer;
   border: 1px solid #344F34;
   font-size: 13px;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
   font-weight: bold;
-}
-
-.circle::after {
-  content: "➜";
-  position: absolute;
-  left: 100%;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: #D08BB9;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.circle:hover::after {
-  left: 0;
 }
 
 .circle:hover {
   background-color: #D08BB9;
-  color: transparent;
 }
 
 .circle.current-day {

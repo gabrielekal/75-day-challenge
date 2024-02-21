@@ -30,7 +30,6 @@ function navigateToImage() {
 
 <style scoped>
 .container {
-  background-color: white;
   border-radius: 10%;
   text-align: center;
 }
@@ -51,34 +50,7 @@ function navigateToImage() {
   font-size: 40px;
 }
 
-.rules-btn {
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
 .rules-btn::after {
-  content: "➜";
-  position: absolute;
-  left: 100%;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: #D08BB9;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
   font-size: 20px;
-}
-
-.rules-btn:hover::after {
-  left: 0;
-}
-
-.rules-btn:hover {
-  color: transparent;
 }
 </style>
