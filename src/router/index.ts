@@ -6,7 +6,6 @@ import Home from '@/views/HomeView.vue'
 import Progress from '@/views/75DayView.vue'
 import About from '@/views/AboutView.vue'
 import WeightPage from '@/views/WeightPage.vue'
-import NotFoundView from "@/views/404View.vue"
 import ImagePage from "@/views/ImageView.vue"
 
 const router = createRouter({
@@ -55,8 +54,7 @@ const router = createRouter({
     },
     {
       path: "/:catchall(.*)*",
-      name: "NotFound",
-      component: NotFoundView
+      redirect: { name: 'home' }
     }
   ]
 })
