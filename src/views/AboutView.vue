@@ -8,7 +8,6 @@ const circles = [
 ];
 </script>
 
-
 <template>
     <main class="view" aria-label="Main About content">
         <main class="container">
@@ -36,7 +35,6 @@ const circles = [
 </template>
 
 <style scoped>
-
 .container {
   height: 100vh;
   padding: 20px;
@@ -50,7 +48,6 @@ const circles = [
   max-width: 600px;
   margin: auto;
 }
-
 
 .about-circle {
   width: 155px;
@@ -66,14 +63,12 @@ const circles = [
   font-family: Anton, sans-serif;
 }
 
-
 .circle-image {
   width: 100%;
   height: 100%;
   border-radius: 10%;
   object-fit: cover;
 }
-
 
 .challenge-description h2 {
     color: #344F34;
@@ -82,12 +77,10 @@ const circles = [
     font-size: 25px;
 }
 
-
 .challenge-description p {
   line-height: 1.6;
   color: #333;
   font-size: 14px;
   margin-bottom: 20px;
 }
-
 </style>

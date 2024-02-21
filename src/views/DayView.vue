@@ -27,7 +27,6 @@ function toggleCheck(rule: Rule) {
 }
 </script>
 
-
 <template>
   <main class="container" aria-label="Main Day content">
     <BackArrow aria-label="Go back" />

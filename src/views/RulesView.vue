@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import BackArrow from "../components/BackArrow.vue"
 
-
 const titleCircles = [
     { id: 1, type: 'text', content: 'RULES OF 75-DAY?' },
     { id: 2, type: 'picture', src: "../images/rules_14.jpeg", alt: 'girl with glass' },
@@ -17,7 +16,6 @@ const titleCircles = [
     { id: 12, type: 'text', content: 'Progress Documentation: Take a daily progress picture of your body.' },
 ];
 </script>
-
 
 <template>
     <main class="view" aria-label="Main Rules view">
@@ -50,7 +48,6 @@ const titleCircles = [
   justify-content: center;
   margin: auto;
 }
-
 
 .rules-circle {
   height: 230px;
