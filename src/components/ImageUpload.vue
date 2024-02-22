@@ -45,7 +45,7 @@ function handleImageChange(event: Event) {
   margin-bottom: 25px;
 }
 
-.circle input[type="file"] {
+.day-circle input[type="file"] {
   display: none;
 }
 

@@ -36,7 +36,7 @@ function toggleCheck(rule: Rule) {
     </div>
     <div class="circles-container">
       <div
-        class="circle"
+        class="day-circle"
         v-for="rule in rules"
         :key="rule.id"
         tabindex="0"
@@ -79,7 +79,7 @@ function toggleCheck(rule: Rule) {
   margin: auto;
 }
 
-.circle {
+.day-circle {
   width: 230px;
   height: 230px;
   border-radius: 10%;
@@ -92,7 +92,7 @@ function toggleCheck(rule: Rule) {
   color: white;
 }
 
-.circle h3 {
+.day-circle h3 {
   margin-bottom: 10px;
   margin-top: 0;
   font-size: 18px;
@@ -104,7 +104,7 @@ function toggleCheck(rule: Rule) {
   text-overflow: ellipsis;
 }
 
-.circle p {
+.day-circle p {
   font-size: 14px;
   margin: 5px 0;
 }
