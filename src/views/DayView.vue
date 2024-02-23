@@ -90,6 +90,8 @@ function toggleCheck(rule: Rule) {
   justify-content: center;
   border: 1px solid #D08BB9;
   color: white;
+  position: relative;
+  overflow: hidden;
 }
 
 .day-circle h3 {
